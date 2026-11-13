@@ -1,0 +1,15 @@
+services:
+  php-cli:
+    image: php:8-cli
+    volumes:
+      - ../:/app
+    working_dir: /app
+    tty: true
+    stdin_open: true
+  composer:
+    image: composer:2
+    volumes:
+      - ../:/app
+    working_dir: /app
+    tty: true
+    
