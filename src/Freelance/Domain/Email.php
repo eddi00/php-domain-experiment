@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Freelance\Domain;
+
+final class Email
+{
+    private function __construct(
+        private string $email,
+    ) {}
+
+    public static function fromString(string $email): self
+    {
+        return new self($email);
+    }
+}

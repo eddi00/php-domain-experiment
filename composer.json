@@ -1,5 +1,32 @@
 {
     "require": {
-        
+        "php": "^8.4",
+        "php-di/php-di": "^7.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.7",
+        "phpstan/phpstan": "^2.2",
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "cs-fixer": "/var/www/tabletkovbot/vendor/bin/php-cs-fixer fix"
     }
 }
