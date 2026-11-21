@@ -12,4 +12,9 @@ final class Email
     {
         return new self($email);
     }
+
+    public function toString(): string
+    {
+        return $this->email;
+    }
 }
