@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use DI\ContainerBuilder;
-use Illuminate\Container\Container as IlluminateContainer;
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Support\Facades\Facade;
-use Psr\Log\LoggerInterface;
+//use Illuminate\Container\Container as IlluminateContainer;
+//use Illuminate\Contracts\Foundation\Application;
+//use Illuminate\Support\Facades\Facade;
+//use Psr\Log\LoggerInterface;
 use Symfony\Component\Dotenv\Dotenv;
 
 $dotenv = new Dotenv();

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Freelance\Application\UseCases\Client;
 
 use App\Freelance\Domain\Client;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Freelance\Domain;
 
 use App\Freelance\Domain\Common\DomainEventsTrait;

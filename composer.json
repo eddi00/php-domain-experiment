@@ -1,21 +1,21 @@
 {
     "name": "php-domain-experiment/php-domain-experiment",
     "require": {
-        "php": "^8.4",
-        "ramsey/uuid": "^4.10",
-        "doctrine/migrations": "^3.9",
-        "doctrine/orm": "^3.8",
-        "doctrine/dbal": "^4.6",
-        "symfony/cache": "^8.1",
-        "php-di/php-di": "^7.1",
-        "symfony/console": "^8.1",
-        "symfony/dotenv": "^8.1"
+        "php": "^8.3",
+        "ramsey/uuid": "*",
+        "doctrine/migrations": "*",
+        "doctrine/orm": "*",
+        "doctrine/dbal": "*",
+        "symfony/cache": "*",
+        "php-di/php-di": "*",
+        "symfony/console": "*",
+        "symfony/dotenv": "*"
     },
     "require-dev": {
-        "pestphp/pest": "^4.7",
-        "phpstan/phpstan": "^2.2",
-        "friendsofphp/php-cs-fixer": "^3.95",
-        "mockery/mockery": "^1.6"
+        "pestphp/pest": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "mockery/mockery": "*"
     },
     "autoload": {
         "psr-4": {
@@ -35,6 +35,7 @@
     },
     "scripts": {
         "test": "pest",
-        "cs-fixer": "/var/www/tabletkovbot/vendor/bin/php-cs-fixer fix"
+        "cs-fixer": "/var/www/tabletkovbot/vendor/bin/php-cs-fixer fix",
+        "console": "php src/Freelance/Presentation/Console/Console.php"
     }
 }

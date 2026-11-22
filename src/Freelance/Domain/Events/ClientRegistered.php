@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Freelance\Domain\Events;
 
 use App\Freelance\Domain\Common\IDomainEvent;
