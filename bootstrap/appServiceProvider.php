@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+use App\Freelance\Application\UseCases\Client\RegisterClientUseCase;
+use App\Freelance\Infrastructure\Event\DomainEventDispatcher;
+use App\Freelance\Infrastructure\Event\IDomainEventDispatcher;
+use Psr\Container\ContainerInterface;
+
 use function DI\autowire;
 use function DI\get;
 
@@ -15,4 +20,9 @@ return [
     // },
 
     // UnitOfWorkInterface::class => autowire(UnitOfWork::class),
+    IDomainEventDispatcher::class => function (ContainerInterface $c) {
+        return new DomainEventDispatcher($c);
+    },
+
+    RegisterClientUseCase::class => autowire(RegisterClientUseCase::class)
 ];

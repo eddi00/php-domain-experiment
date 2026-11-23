@@ -6,4 +6,5 @@ namespace App\Freelance\Domain\Common;
 
 interface IDomainEvent
 {
+    public static function getName(): string;
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Freelance\Presentation\Console;
 
-use App\Freelance\Presentation\Console\Commands\GetTelegramUpdatesCommand;
+use App\Freelance\Presentation\Console\Commands\RegisterClientUseCaseCommand;
 use DI\Container;
 use RuntimeException;
 use Symfony\Component\Console\Application;
@@ -21,7 +21,7 @@ if (!$container instanceof Container) {
 }
 
 $commandLoader = new ContainerCommandLoader($container, [
-    'app:tg-bot-get-updates'    => GetTelegramUpdatesCommand::class,
+    'app:register-client-use-case' => RegisterClientUseCaseCommand::class,
 //    'app:send-telegram-message' => SendTelegramMessageCommand::class,
 //    'app:outbox-publish'        => OutboxPublishCommand::class,
 //    'app:message-queue-consume'         => MessageQueueConsumeCommand::class,

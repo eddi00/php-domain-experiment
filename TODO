@@ -1,10 +1,10 @@
 TODO:
 - Configure Doctrine
-- Add Dependency inversion
-- Domain Event processor
 - More domain classes
 - Domain class to Database class mapper
 - Domain tests
 - 
 
 DONE:
+- Domain Event processor
+- Add Dependency inversion

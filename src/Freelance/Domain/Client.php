@@ -21,7 +21,7 @@ final class Client
     {
         $client = new self($id, $email);
 
-        $client->recordDomainEvent(new ClientRegistered($client->$id));
+        $client->recordDomainEvent(new ClientRegistered($client->id));
 
         return $client;
     }
